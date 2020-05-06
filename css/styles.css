@@ -8,7 +8,7 @@ body{
 .header{
     display: flex;
     padding: 0 40px;
-
+    margin: auto;
     box-shadow: rgba(0,0,0, 0.18) 0px 1px 2px;
 }
 
@@ -83,3 +83,62 @@ button:hover .filter > button{
 
 
 /*main --section */
+
+.main{
+    margin: 50px 100px 0 100px;
+}
+
+.main-title{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.filter-list{
+    margin-top: 22px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.filter-list button{
+    margin-right: 16px;
+    background-color: white;
+    border: rgba(0,0,0,0.36) 1px solid;
+    border-radius: 22px;
+    padding: 10px 20px; 
+}
+.filter-list button:hover{
+    cursor: pointer;
+    border: rgba(0,0,0, 0.70) 1px solid;
+}
+
+.accommodation{
+    margin-top: 26px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+}
+
+.list-item{
+    width: 260px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    padding: 10px;
+}
+.card{
+    border: #222222 solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+.card-image img{
+    border: rgba(0,0,0,0.18) 1px 2px;
+    border-radius: 10px;
+    width: 100%;
+}
