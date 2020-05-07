@@ -139,6 +139,8 @@ body{
     padding: 10px;
 }
 .card{
+    max-width: 300px;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -148,6 +150,33 @@ body{
     box-shadow: rgba(0,0,0,20) 0px 1px 2px ;
     width: 100%;
 }
+.card-image .heart i{
+    position: absolute;
+    color: #FF385C;
+    top: 10px;
+    right: 10px;
+    padding: 4px;
+}
+.card-image .arrows i:first-child{
+    position: absolute;
+    left: 4px;
+    top: 40%;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: rgba(0,0,0,0.6) 0px 1px 2px;
+    font-size: 18px;
+    padding: 6px;
+}
+.card-image .arrows i:last-child{
+    position: absolute;
+    right: 4px;
+    top: 40%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    padding: 6px;
+    text-shadow: rgba(0,0,0,0.6) 0px 1px 2px;
+}
+
+
 .card-rating{
     padding: 4px;
 }
