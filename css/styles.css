@@ -139,12 +139,31 @@ body{
     padding: 10px;
 }
 .card{
-    border: #222222 solid 1px;
     display: flex;
     flex-direction: column;
 }
 .card-image img{
     border: rgba(0,0,0,0.18) 1px 2px;
     border-radius: 10px;
+    box-shadow: rgba(0,0,0,20) 0px 1px 2px ;
     width: 100%;
+}
+.card-rating{
+    padding: 4px;
+}
+.card-rating span{
+    font-size: 14px;
+}
+.card-rating i{
+    color: #FF385C;
+}
+.card-description{
+    font-size: 14px;
+    padding: 4px;
+}
+.card-price{
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: inherit,sans-serif;
+    padding: 4px;
 }
