@@ -6,7 +6,14 @@ body{
 }
 
 .header{
+    background-color:white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
     display: flex;
+    flex-wrap: wrap;
     padding: 0 40px;
     margin: auto;
     box-shadow: rgba(0,0,0, 0.18) 0px 1px 2px;
@@ -33,9 +40,11 @@ body{
 .filter{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .filter button{
+    height: 40px;
     cursor: pointer;
     outline: none;
     padding: 0 16px;
@@ -44,10 +53,6 @@ body{
     border-right: none;
     justify-content: center;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.12);
-}
-
-button:hover .filter > button{
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.20);
 }
 
 .filter button:last-child{
@@ -65,7 +70,8 @@ button:hover .filter > button{
     align-items: center;
 }
 .nav button{
-    height: 80%;
+    outline: none;
+    height: 40px;
     padding: 0 16px;
     font-weight: bold;
     background-color: white;
@@ -75,17 +81,17 @@ button:hover .filter > button{
 }
 
 .nav button:last-child{
+    margin-right: 50px;
     border:  1px solid rgb(235,235,235);
     border-radius: 22px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.18);
-    flex-grow: 0;
 }
 
 
 /*main --section */
 
 .main{
-    margin: 50px 100px 0 100px;
+    margin: 140px 100px 0 100px;
 }
 
 .main-title{
