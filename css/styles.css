@@ -321,6 +321,8 @@ body{
             align-items: center;
         }
         .list-item{
+            margin-bottom: 0px;
+            padding: 0 10px;
             width: 90%;
             height: 400px;
         }
