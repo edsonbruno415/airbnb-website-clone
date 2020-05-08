@@ -1,5 +1,9 @@
 @import url('reset.css');
 
+*{
+    outline: none;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: #222222 !important;
