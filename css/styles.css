@@ -25,14 +25,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF385C;
-    font-weight: bolder;
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif,'Balsamiq Sans', cursive;
 }
 .logo img{
-    text-align: center;
-    width: 50px;
+    width: 120px;
 }
 
 .filter{
