@@ -144,44 +144,70 @@ body{
 }
 .card{
     max-width: 300px;
-    position: relative;
     display: flex;
     flex-direction: column;
+} 
+.card-image{
+    position: relative;
+}
+.card-image image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .card-image img{
     border: rgba(0,0,0,0.18) 1px 2px;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,20) 0px 1px 2px ;
-    max-height: 178px;
-    width: 267px;
+    height: 240px;
+    width: 100%;
 }
 .card-image .heart i{
     position: absolute;
     color: #FF385C;
-    text-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+    text-shadow: rgba(0,0,0,0.7) 0px 0px 2px;
+    font-size: 20px;
     top: 10px;
     right: 10px;
     padding: 4px;
+    transition: transform 0.2s ease-in-out;
 }
+.card-image .heart:hover > i{
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+.card-image .heart:active > i{
+    color: rgb(214, 143, 156);
+}
+
 .card-image .arrows i:first-child{
     position: absolute;
     left: 4px;
     top: 40%;
     color: rgba(255, 255, 255, 0.6);
-    text-shadow: rgba(0,0,0,0.6) 0px 1px 2px;
-    font-size: 18px;
+    text-shadow: rgba(0,0,0,0.6) 0px 0px 10px;
+    font-size: 24px;
     padding: 6px;
 }
 .card-image .arrows i:last-child{
     position: absolute;
     right: 4px;
     top: 40%;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
     padding: 6px;
-    text-shadow: rgba(0,0,0,0.6) 0px 1px 2px;
+    text-shadow: rgba(0,0,0,0.6) 0px 0px 10px;
 }
-
+.card-image .arrows i{
+    transition: transform 0.1s ease-in-out;
+}
+.card-image .arrows i:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.card-image .arrows i:active{
+    transform: scale(1.2,1.2);
+}
 
 .card-rating{
     padding: 4px;
@@ -191,11 +217,13 @@ body{
 }
 .card-rating i{
     color: #FF385C;
-    text-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #FF385C;
 }
 .card-description{
     font-size: 14px;
     padding: 4px;
+    height: 40px;
 }
 .card-price{
     font-size: 16px;

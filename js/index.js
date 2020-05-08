@@ -8,12 +8,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     fetch(url)
         .then((Response) => {
             Response.json().then((responseList) => {
-                responseList.forEach((item)=>{
+                responseList.forEach((item) => {
                     let listItemTemplate = `                
                         <li class="list-item">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="${item.photo}" alt="imagem-hospedagem" />
+                                    <div class="image">
+                                        <img src="${item.photo}" alt="imagem-hospedagem" />
+                                    </div>
                                     <div class="arrows">
                                         <i class="fas fa-chevron-circle-left"></i>
                                         <i class="fas fa-chevron-circle-right"></i>
@@ -30,7 +32,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                                     <p>${item.property_type}</p>
                                     <p>${item.name}</p>
                                 </div>
-                                <div class="card-price">    
+                                <div class="card-price">
                                     <span>R$ ${item.price}</span>
                                 </div>
                             </div>
@@ -44,3 +46,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
             console.log('ERRO: ', err);
         });
 });
+
+/*
+<div class="card-description">
+<p>${item.property_type}</p>
+<p>${item.name}</p>
+</div>
+<div class="card-price">
+<span>R$ ${item.price}</span>
+</div>
+*/
