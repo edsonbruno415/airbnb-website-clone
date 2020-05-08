@@ -1,7 +1,5 @@
 const url = 'https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72';
 
-
-
 window.addEventListener('DOMContentLoaded', (event) => {
     const list = document.getElementById('list');
     list.innerHTML = '';
@@ -46,13 +44,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
             console.log('ERRO: ', err);
         });
 });
-
-/*
-<div class="card-description">
-<p>${item.property_type}</p>
-<p>${item.name}</p>
-</div>
-<div class="card-price">
-<span>R$ ${item.price}</span>
-</div>
-*/

@@ -147,6 +147,9 @@ body{
     display: flex;
     flex-direction: column;
 } 
+.card:hover .arrows > i{
+    visibility: visible;
+}
 .card-image{
     position: relative;
 }
@@ -159,7 +162,7 @@ body{
     border: rgba(0,0,0,0.18) 1px 2px;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,20) 0px 1px 2px ;
-    height: 240px;
+    height: 260px;
     width: 100%;
 }
 .card-image .heart i{
@@ -181,25 +184,22 @@ body{
     color: rgb(214, 143, 156);
 }
 
-.card-image .arrows i:first-child{
+.card-image .arrows i{
     position: absolute;
-    left: 4px;
-    top: 40%;
     color: rgba(255, 255, 255, 0.6);
     text-shadow: rgba(0,0,0,0.6) 0px 0px 10px;
     font-size: 24px;
-    padding: 6px;
+    padding: 8px;
+    top: 40%;
+}
+.card-image .arrows i:first-child{
+    left: 4px;
 }
 .card-image .arrows i:last-child{
-    position: absolute;
     right: 4px;
-    top: 40%;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 24px;
-    padding: 6px;
-    text-shadow: rgba(0,0,0,0.6) 0px 0px 10px;
 }
 .card-image .arrows i{
+    visibility: hidden;
     transition: transform 0.1s ease-in-out;
 }
 .card-image .arrows i:hover{
@@ -221,9 +221,15 @@ body{
     -webkit-text-stroke-color: #FF385C;
 }
 .card-description{
+    width: 100%;
+}
+.card-description p{
     font-size: 14px;
     padding: 4px;
-    height: 40px;
+    max-width: 32ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .card-price{
     font-size: 16px;
