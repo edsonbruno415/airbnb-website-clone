@@ -262,8 +262,46 @@ body{
     display: none;
 }
 
+.footer-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 0;
+    color: white; 
+}
+
+.about{
+    padding: 16px 32px;
+    padding-right: 10px;
+}
+
+
+.redes{
+    padding: 16px 32px;
+    font-size: 32px;
+}
+.redes a{
+    color: white;
+}
+.redes i{
+    margin-right: 8px;
+}
+
+.redes i:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
 
 @media only screen and (max-width: 930px){
+    .footer-desktop{
+        display: none;
+    }
+    .main{
+        margin-bottom: 60px;
+    }
     .main-title, .filter-list{
         display: none;
     }
@@ -309,6 +347,7 @@ body{
         .main{
             margin: auto;
             margin-top: 100px;
+            margin-bottom: 60px;
         }
         .header{
             padding: 0;

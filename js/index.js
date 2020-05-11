@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                                     <p>${item.name}</p>
                                 </div>
                                 <div class="card-price">
-                                    <span>R$ ${item.price}</span>
+                                    <span>R$ ${item.price} / dia</span>
                                 </div>
                             </div>
                         </li>`;
